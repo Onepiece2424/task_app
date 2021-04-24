@@ -18,5 +18,12 @@ module TaskApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    config.hosts << ".amazonaws.com"
+    config.action_controller.permit_all_parameters = true
+    config.time_zone = 'Asia/Tokyo' #ここに追加しましょう
+    
+    config.i18n.default_locale = :ja
+    
   end
 end

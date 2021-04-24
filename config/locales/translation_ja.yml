@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー  #g
+
+    attributes:
+      user:
+        age: 年齢  #g
+        allday: 一日中  #g
+        email: Eメール  #g
+        end: 終わり  #g
+        introduction: 前書き  #g
+        name: 名前  #g
+        start: 開始  #g
