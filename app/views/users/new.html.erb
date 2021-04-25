@@ -21,13 +21,11 @@
           <th><%= f.label :allday ,"終日" %></th>
           <td><%= f.check_box :allday, {class: User},checked_value = "true",unchecked_value = "false" %></td>
         </tr>
-        
         <tr>
           <th><%= f.label :introduction ,"スケジュールメモ" %></th>
           <td><%= f.text_area :introduction %></td>
         </tr>
       </table>
- 
       <div>
         <ul>
           <li><%= f.submit "スケジュールを新規登録する"%></li>
