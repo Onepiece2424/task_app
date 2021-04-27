@@ -1,6 +1,8 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,5 +20,11 @@ module TaskApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.hosts << '.amazonaws.com'
+    config.action_controller.permit_all_parameters = true
+    config.time_zone = 'Asia/Tokyo' # ここに追加しましょう
+
+    config.i18n.default_locale = :ja
   end
 end
